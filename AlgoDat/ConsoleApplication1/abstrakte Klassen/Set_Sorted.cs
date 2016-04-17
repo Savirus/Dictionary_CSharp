@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Set_Sorted : Dictionary
+    abstract class Set_Sorted : Set_Unsorted
     {
+        
     }
 }

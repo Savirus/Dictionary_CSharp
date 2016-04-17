@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    interface Dictionary
+    interface IDictionary
     {
+        //true = gefunden
+        bool Search(int elem);
+        //true = hinzugefügt
+        bool Insert(int elem);
+        //true = gelöscht
+        bool Delete(int elem);
+        //Einfache Ausgabe
+        void Print();
     }
 }

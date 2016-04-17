@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen
 {
-    class MultisetUnsortedLinkedList:Multiset_Unsorted
+    class MultisetUnsortedLinkedList : Multiset_Unsorted
     {
+        public override bool Delete(int elem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool Insert(int elem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Print()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool Search(int elem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

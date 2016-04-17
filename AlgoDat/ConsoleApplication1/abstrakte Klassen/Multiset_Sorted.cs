@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Multiset_Sorted: Dictionary
+    abstract class Multiset_Sorted : Multiset_Unsorted
     {
+       
     }
 }

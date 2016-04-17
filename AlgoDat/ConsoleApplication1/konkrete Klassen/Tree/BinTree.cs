@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen.Tree
 {
-    class BinTree:Set_Sorted
+    class BinTree : Set_Sorted
     {
+        public override bool Delete(int elem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool Insert(int elem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Print()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool Search(int elem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
