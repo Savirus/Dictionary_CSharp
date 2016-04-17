@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Program
+    class Set_Sorted : Dictionary
     {
-        static void Main(string[] args)
-        {
-            
-
-        }
     }
-
 }

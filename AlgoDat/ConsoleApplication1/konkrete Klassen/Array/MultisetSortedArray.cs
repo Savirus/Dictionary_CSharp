@@ -4,15 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication1.konkrete_Klassen
 {
-    class Program
+    class MultisetSortedArray:Multiset_Sorted
     {
-        static void Main(string[] args)
-        {
-            
-
-        }
     }
-
 }

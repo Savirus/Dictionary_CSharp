@@ -43,12 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Schnittstellen\Dictionary.cs" />
+    <Compile Include="abstrakte Klassen\Multiset_Sorted.cs" />
+    <Compile Include="abstrakte Klassen\Multiset_Unsorted.cs" />
+    <Compile Include="konkrete Klassen\LinkedList\MultisetSortedLinkedList.cs" />
+    <Compile Include="konkrete Klassen\Array\MultisetSortedArray.cs" />
+    <Compile Include="konkrete Klassen\Array\MultisetUnsortedArray.cs" />
+    <Compile Include="konkrete Klassen\LinkedList\MultisetUnsortedLinkedList.cs" />
+    <Compile Include="konkrete Klassen\Array\SetSortedArray.cs" />
+    <Compile Include="konkrete Klassen\LinkedList\SetSortedLinkedList.cs" />
+    <Compile Include="konkrete Klassen\Array\SetUnsortedArray.cs" />
+    <Compile Include="konkrete Klassen\LinkedList\SetUnsortedLinkedList.cs" />
+    <Compile Include="konkrete Klassen\Tree\AVLTree.cs" />
+    <Compile Include="konkrete Klassen\Tree\BinTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="abstrakte Klassen\Set_Sorted.cs" />
+    <Compile Include="abstrakte Klassen\Set_Unsorted.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

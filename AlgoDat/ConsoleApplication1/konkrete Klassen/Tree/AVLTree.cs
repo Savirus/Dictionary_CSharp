@@ -4,15 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication1.konkrete_Klassen.Tree
 {
-    class Program
+    class AVLTree:BinTree
     {
-        static void Main(string[] args)
-        {
-            
-
-        }
     }
-
 }
