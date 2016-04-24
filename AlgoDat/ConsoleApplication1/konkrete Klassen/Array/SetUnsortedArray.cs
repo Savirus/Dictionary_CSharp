@@ -12,8 +12,7 @@ namespace ConsoleApplication1.konkrete_Klassen
         MultisetUnsortedArray mua = new MultisetUnsortedArray();
         public override bool Delete(int elem)
         {
-            //Gleich wie MultisetUnsorted
-            throw new NotImplementedException();
+           return mua.Delete(elem);
         }
 
         public override bool Insert(int elem)
@@ -29,14 +28,16 @@ namespace ConsoleApplication1.konkrete_Klassen
         public override void Print()
         {
             //Gleich wie MultisetUnsorted
-            throw new NotImplementedException();
+            mua.Print();
+            
         }
 
         public override bool Search(int elem)
         {
+
+            return mua.Search(elem);
             
-            //Gleich wie MultisetUnsorted
-            throw new NotImplementedException();
         }
+
     }
 }
