@@ -14,7 +14,7 @@ namespace ConsoleApplication1
         {
 
             Console.WriteLine("Suche");
-            int search_elem = Convert.ToInt32(Console.ReadLine());
+            //int search_elem = Convert.ToInt32(Console.ReadLine());
 
             IDictionary mua = new MultisetUnsortedArray();
             IDictionary sua = new SetUnsortedArray();
@@ -43,11 +43,35 @@ namespace ConsoleApplication1
             //sua.Print();
 
             //Console.WriteLine(sua.Search(search_elem));
-
-            mss.Insert(7);
-            mss.Insert(2);
-            mss.Insert(23);
+            /*Random a = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                int n = a.Next(1000);
+                Console.WriteLine("num" + n);
+                mss.Insert(a.Next(n));
+            }*/
+             mss.Insert(22);
+            mss.Print();
+            mss.Insert(6);
+            mss.Print();
+            mss.Insert(5);
+            mss.Print();
+            mss.Insert(6);
+            mss.Print();
             mss.Insert(1);
+            /*mss.Insert(100);
+            mss.Insert(50);
+            mss.Insert(60);
+            mss.Insert(70);
+            mss.Insert(40);
+            mss.Insert(20);
+            mss.Insert(30);
+            mss.Insert(56);
+            mss.Insert(23);
+            mss.Insert(34);
+            mss.Insert(22);
+            mss.Insert(11);*/
+
             mss.Print();
 
 
