@@ -24,6 +24,11 @@ namespace ConsoleApplication1.konkrete_Klassen
 				return false;
 			}
 
+			if (elem < 1) {
+				Console.WriteLine ("Nur positive Zahlen erlaubt!");
+				return false;
+			}
+
 			if (limit == 0)
 			{
 				array[0] = elem;
