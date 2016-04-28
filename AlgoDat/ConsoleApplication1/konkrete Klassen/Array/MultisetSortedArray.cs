@@ -16,88 +16,51 @@ namespace ConsoleApplication1.konkrete_Klassen
             return true;
         }
 
-        private void fillArray()
-        {
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = 99999;
-            }
-            array[0] = 21;
-            //array[1] = 2;
-            array[1] = 3;
-        }
 
         public override bool Insert(int elem)
         {
-            int index = 0;
-            if (limit == 0)
-            {
-                array[0] = elem;
-            }
-            else
-            {
-                index = Search(elem, 0, limit);
-                if (pleft > pright)
-                {
-                    array[pleft] = elem;
-                }
-                else
-                {
-                    array[pright] = elem;
-                }
-            }
-            limit++;
-            //array[0] = 23;
-            //array[1] = 24;
-            /*fillArray();
-            int index = Search(elem, 0, array.Length-1);
-            Console.WriteLine("Searchindex:" + index);
-            return true;*/
+			if (limit == array.Length) {
+				Console.WriteLine ("Insert von " + elem + " fehlgeschlagen. Array ist voll!");
+				return false;
+			}
 
-            
-            
-            Console.WriteLine("ir: " + pleft + " " + pright);
-            //Console.WriteLine("insert:"+index);
-            /*if (index < 0)
-            {
-                index *= -1;
-            }*/
-           /* for (int i = letztesObjekt ; i >= index; i--)
-            {
-                array[letztesObjekt + 1] = array[letztesObjekt];
+			if (limit == 0)
+			{
+				array[0] = elem;
+			}
+			else
+			{
+				int index = Search(elem, 0, limit-1);
+				if (index < 0) { //Wenn es den Wert schon gibt, dann ist der Index negativ
+					index = -index;
+				}
 
-            }*/
-            //array[index] = elem;
-           // letztesObjekt++;
-            return true;
-            
+				if (array [index] != 0) {
+					//Verschiebe die Elemente eins nach rechts um Platz für das neue Element zu machen
+					Array.Copy (array, index, array, index + 1, limit-index);
+				}
+				array [index] = elem;
+			}
+			limit++;
+
+			return true;
         }
-        //array 0 .. array.length / letztes Element
 
-        int pleft, pright;
         
         private int Search(int elem, int left, int right)
         {
-           // Console.WriteLine(elem + " " + left + " " + right);
-            
-            if (left <= right)
-            {
-                int middle = (left + right) / 2;
-                if (elem == array[middle])
-                    return middle;
-                else if (elem < array[middle])
-                    return Search(elem, left, middle - 1);
-                else
-                    return Search(elem, middle + 1, right);
-            }
-            Console.WriteLine("l " + left + "; r " + right);
-            pleft = left;
-            pright = right;
-            /*if (pleft < pright)
-                return pleft;
-            else
-                return pright;*/
-            return -1;
+			if (left <= right)
+			{
+				int middle = (left + right) / 2;
+				if (elem == array[middle])
+					return -middle; //negativ für Duplikaterkennung
+				else if (elem < array[middle])
+					return Search(elem, left, middle - 1);
+				else
+					return Search(elem, middle + 1, right);
+			}
+
+			return left;
         }
 
 
