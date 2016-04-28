@@ -1,2 +1,2 @@
 # Dictionary_CSharp
-Dictionary Framework
+Dictionary Framework für AlgoDat
