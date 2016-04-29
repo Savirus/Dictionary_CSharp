@@ -42,7 +42,10 @@ namespace ConsoleApplication1.konkrete_Klassen
 
 				if (array [index] != 0) {
 					//Verschiebe die Elemente eins nach rechts um Platz für das neue Element zu machen
-					Array.Copy (array, index, array, index + 1, limit-index);
+					//Array.Copy (array, index, array, index + 1, limit-index);
+					for (int i = limit; i > index; i--) {
+						array [i] = array [i-1];
+					}
 				}
 				array [index] = elem;
 			}
