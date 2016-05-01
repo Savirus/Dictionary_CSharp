@@ -7,37 +7,15 @@ using System.Threading.Tasks;
 namespace ConsoleApplication1.konkrete_Klassen
 {
 
-    class SetUnsortedArray : Set_Unsorted
+    class SetUnsortedArray : UnsortedArray
     {
-        MultisetUnsortedArray mua = new MultisetUnsortedArray();
-        public override bool Delete(int elem)
-        {
-           return mua.Delete(elem);
-        }
-
-        public override bool Insert(int elem)
-        {
-            if (!mua.Search(elem))
-            {
-                return mua.Insert(elem);
-            }
-            return false;
-            //Vorherige Suche ob objekt vorhanden.
-        }
-
-        public override void Print()
-        {
-            //Gleich wie MultisetUnsorted
-            mua.Print();
-            
-        }
-
-        public override bool Search(int elem)
-        {
-
-            return mua.Search(elem);
-            
-        }
+		public override bool Insert (int elem){
+			if (!Search (elem)) {
+				return _Insert (elem);
+			} else {
+				return false;
+			}
+		}
 
     }
 }

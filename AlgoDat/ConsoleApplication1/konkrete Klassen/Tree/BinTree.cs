@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen.Tree
 {
-    class BinTree : Set_Sorted
+   /* class BinTree : Set_Sorted
     {
         public override bool Delete(int elem)
         {
@@ -27,5 +27,5 @@ namespace ConsoleApplication1.konkrete_Klassen.Tree
         {
             throw new NotImplementedException();
         }
-    }
+    }*/
 }

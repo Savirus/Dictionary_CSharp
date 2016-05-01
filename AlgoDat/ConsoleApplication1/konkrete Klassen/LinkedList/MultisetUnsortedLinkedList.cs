@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen
 {
-    class MultisetUnsortedLinkedList : Multiset_Unsorted
+   /* class MultisetUnsortedLinkedList : Multiset_Unsorted
     {
         public override bool Delete(int elem)
         {
@@ -27,5 +27,5 @@ namespace ConsoleApplication1.konkrete_Klassen
         {
             throw new NotImplementedException();
         }
-    }
+    }*/
 }

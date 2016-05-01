@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen
 {
-    class SetUnsortedLinkedList : Set_Unsorted
-    {
+/*    {
         public override bool Delete(int elem)
         {
             throw new NotImplementedException();
@@ -27,5 +26,5 @@ namespace ConsoleApplication1.konkrete_Klassen
         {
             throw new NotImplementedException();
         }
-    }
+    }*/
 }

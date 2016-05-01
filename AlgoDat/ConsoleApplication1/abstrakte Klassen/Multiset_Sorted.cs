@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    abstract class Multiset_Sorted : Multiset_Unsorted
+    abstract class Multiset_Sorted : Array
     {
        
     }

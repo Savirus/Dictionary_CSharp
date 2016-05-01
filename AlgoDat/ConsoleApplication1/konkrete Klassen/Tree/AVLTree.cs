@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen.Tree
 {
-    class AVLTree:BinTree
+    /*class AVLTree:BinTree
     {
-    }
+    }*/
 }

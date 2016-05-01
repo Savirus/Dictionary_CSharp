@@ -14,41 +14,42 @@ namespace ConsoleApplication1
         {
 
             Console.WriteLine("Suche");
-            //int search_elem = Convert.ToInt32(Console.ReadLine());
+			int search_elem = 12;//Convert.ToInt32(Console.ReadLine());
 
             IDictionary mua = new MultisetUnsortedArray();
             IDictionary sua = new SetUnsortedArray();
             IDictionary mss = new MultisetSortedArray();
-            //mua.Insert(7);
-            //mua.Insert(12);
-            //mua.Insert(34);
-            //mua.Insert(67);
-            //mua.Insert(75);
-            //mua.Print();
-            //mua.Delete(67);
+            mua.Insert(7);
+            mua.Insert(12);
+            mua.Insert(34);
+            mua.Insert(67);
+            mua.Insert(75);
+            mua.Print();
+            mua.Delete(67);
 
 
-            //mua.Print();
+            mua.Print();
 
-            //Console.WriteLine(mua.Search(search_elem));
+            Console.WriteLine(mua.Search(search_elem));
 
-            //sua.Insert(12);
-            //sua.Insert(45);
-            //sua.Insert(35);
-            //sua.Insert(567);
-            //sua.Insert(1);
-            //sua.Insert(45);
-            //sua.Print();
-            //sua.Delete(45);
-            //sua.Print();
+            sua.Insert(12);
+            sua.Insert(45);
+            sua.Insert(35);
+            sua.Insert(567);
+            sua.Insert(1);
+            sua.Insert(45);
+            sua.Print();
+            sua.Delete(45);
+            sua.Print();
 
-            //Console.WriteLine(sua.Search(search_elem));
+            Console.WriteLine(sua.Search(search_elem));
             Random a = new Random();
             for (int i = 0; i < 20; i++)
             {
                 int n = a.Next(1,100);
                 Console.WriteLine("=== Insert " + n + " ===");
                 mss.Insert(n);
+				mss.Print();
             }
             
 

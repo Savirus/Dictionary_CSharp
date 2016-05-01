@@ -6,26 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.konkrete_Klassen
 {
-    class SetSortedArray : Set_Sorted
+    class SetSortedArray : SortedArray
     {
-        public override bool Delete(int elem)
-        {
-            throw new NotImplementedException();
-        }
 
-        public override bool Insert(int elem)
-        {
-            throw new NotImplementedException();
-        }
+		public override bool Insert (int elem){
+			if (!Search (elem)) {
+				return _Insert (elem);
+			} else {
+				return false;
+			}
+		}
 
-        public override void Print()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool Search(int elem)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
