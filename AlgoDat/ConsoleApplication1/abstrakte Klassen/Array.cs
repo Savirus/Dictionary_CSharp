@@ -23,7 +23,7 @@ namespace ConsoleApplication1
 		public abstract bool Insert (int elem);
 		public abstract bool Delete(int elem);
 
-		public bool _Delete(int elem, int index)
+		public bool _Delete(int index)
 		{
 			//int index = _Search(elem);
 			if (index >= 0)

@@ -38,9 +38,11 @@ namespace ConsoleApplication1
 		}
 
 		public override bool Delete(int elem){
-			return _Delete (elem, _Search (elem));
+			return _Delete (_Search (elem));
 
 		}
+
+
 		/*public abstract bool Insert (int elem);
 		public abstract bool Delete (int elem);
 

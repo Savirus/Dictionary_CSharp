@@ -13,7 +13,7 @@ namespace ConsoleApplication1
 
 		public override bool Delete(int elem){
 
-			return _Delete (elem, -(_Search(elem, 0, limit)));
+			return _Delete (-(_Search(elem, 0, limit)));
 
 		}
 
