@@ -28,7 +28,7 @@ namespace ConsoleApplication1
 			//int index = _Search(elem);
 			if (index >= 0)
 			{
-				if (index == array.Length)
+				if (index == array.Length-1)
 				{
 					array[index] = 0;
 					limit--;
