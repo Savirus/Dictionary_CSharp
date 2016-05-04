@@ -9,9 +9,6 @@ namespace ConsoleApplication1.konkrete_Klassen
     class MultisetSortedArray : SortedArray
     {
 
-		public override bool Insert (int elem){
-			return _Insert (elem);
-		}
 
 
     }

@@ -11,7 +11,7 @@ namespace ConsoleApplication1.konkrete_Klassen
 
 		public override bool Insert (int elem){
 			if (!Search (elem)) {
-				return _Insert (elem);
+				return base.Insert (elem);
 			} else {
 				return false;
 			}

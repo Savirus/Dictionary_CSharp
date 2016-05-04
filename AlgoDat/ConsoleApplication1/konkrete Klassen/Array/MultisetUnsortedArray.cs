@@ -8,9 +8,7 @@ namespace ConsoleApplication1.konkrete_Klassen
 {
     class MultisetUnsortedArray : UnsortedArray
     {
-		public override bool Insert (int elem){
-			return _Insert (elem);
-		}
+
 
     }
 }

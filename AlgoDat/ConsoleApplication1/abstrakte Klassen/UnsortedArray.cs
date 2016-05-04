@@ -5,7 +5,7 @@ namespace ConsoleApplication1
 	public abstract class UnsortedArray : Array
 	{
 
-		public bool _Insert(int elem)
+		public bool Insert(int elem)
 		{
 			array[limit] = elem;
 			limit++;
