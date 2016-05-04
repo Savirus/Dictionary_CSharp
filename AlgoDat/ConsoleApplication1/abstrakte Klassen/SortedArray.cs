@@ -13,7 +13,7 @@ namespace ConsoleApplication1
 
 		public override bool Delete(int elem){
 
-			return _Delete (elem, -(_Search(elem, 0, array.Length-1)));
+			return _Delete (elem, -(_Search(elem, 0, array.Length)));
 
 		}
 
@@ -57,7 +57,7 @@ namespace ConsoleApplication1
 		}
 
 		public override bool Search (int elem){
-			int result = _Search(elem, 0, array.Length-1);
+			int result = _Search(elem, 0, array.Length);
 			if (result < 0) {
 				return true;
 			}
