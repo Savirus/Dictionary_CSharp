@@ -28,21 +28,14 @@ namespace ConsoleApplication1
 			//int index = _Search(elem);
 			if (index >= 0)
 			{
-				if (index == array.Length-1)
+				array[index] = 0;
+				for (int i = index; i < array.Length - 1; i++)
 				{
-					array[index] = 0;
-					limit--;
-					return true;
+					array[i] = array[i + 1];
 				}
-				else
-				{
-					for (int i = index; i < array.Length - 1; i++)
-					{
-						array[i] = array[i + 1];
-					}
-					limit--;
-					return true;
-				}
+				limit--;
+				return true;
+
 			}
 			else
 				return false;
