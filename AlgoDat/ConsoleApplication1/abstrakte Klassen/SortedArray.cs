@@ -19,7 +19,7 @@ namespace ConsoleApplication1
 
 		//public abstract bool Insert (int elem);
 
-		public bool Insert(int elem)
+		public override bool Insert(int elem)
 		{
 			if (limit == array.Length) {
 				Console.WriteLine ("Insert von " + elem + " fehlgeschlagen. Array ist voll!");
